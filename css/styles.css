@@ -73,12 +73,17 @@ h2 {
   padding-top: 1em;
 }
 
-#checkbox {
+.checkbox {
   display: none;
 }
 
-#checkbox:checked ~ .switch::before {
-  transform: translateX(0);
+.checkbox:checked ~ .switch::before {
+  transform: translateX(40px);
+  background: #282943;
+}
+
+.checkbox:checked ~ .switch {
+  background: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
 }
 
 .switch {
@@ -100,7 +105,7 @@ h2 {
   margin: 5px;
   height: 30px;
   width: 30px;
-  transform: translateX(40px);
+  transform: translateX(0);
   transition: 0.3s;
   will-change: transform;
 }
